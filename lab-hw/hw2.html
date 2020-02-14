@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=BenchNine:300,700|Merriweather&display=swap" rel="stylesheet">
+	<title>Menu</title>
+<style>
+html {
+	height: 100%;
+	margin: 0;
+}
+body {
+	margin: 4% 18%;
+	font-family: 'BenchNine', sans-serif;
+}
+div {
+	flex: 1;
+}
+h1, h2 {
+	text-align: center;
+}
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+	margin-bottom: -10px;
+}
+h2 {
+	font-weight: 300;
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: -20px;
+}
+h3 {
+	font-size: 2.5em;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+p {
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+}
+.half {
+	margin: 5% 5%;
+}
+.menu {
+	display: flex;
+	flex-direction: row;
+}
+.category {
+	display: flex;
+}
+.dish {
+	width: 90%;
+}
+.price {
+	width: 10%;
+	text-align: right;
+}
+p:nth-of-type(even) {
+	;
+}
+
+@media (max-width: 700px) {
+	/*if the above statement is true it will apply these styles*/
+	.menu {
+		flex-direction: column;
+	}
+}
+</style>
+</head>
+<body>
+<h1>RICARDO'S</h1>
+<h2>BEST FOOD IN TOWN</h2>
+
+<div class="menu">
+	<div class="half">
+		<div>
+			<h3>APPETIZERS</h3>
+			<div  class="category">
+				<div class="dish">
+					<p>BREEK SALAD</p>
+					<p>TORTILLA ESPAÑOLA</p>
+					<p>OLIVAS RELLENAS</p>
+					<p>VERDURAS CON OLIVADA</p>
+				</div>
+				<div class="price">
+					<p>4.99</p>
+					<p>4.49</p>
+					<p>6.49</p>
+					<p>2.99</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>MAIN COURSE</h3>
+			<div  class="category">
+				<div class="dish">
+					<p>LENGUADO</p>
+					<p>BACALAD FRITO</p>
+					<p>PAELLA MIXTA</p>
+					<p>LOMO DE SALMÓN</p>
+					<p>POLLO AL HDRNO</p>
+					<p>TORTILLA DELIGHT</p>
+				</div>
+				<div class="price">
+					<p>11.99</p>
+					<p>6.99</p>
+					<p>8.49</p>
+					<p>11.49</p>
+					<p>7.99</p>
+					<p>9.49</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="half">
+		<div>
+			<h3>DESSERTS</h3>
+			<div  class="category">
+				<div class="dish">
+					<p>BANANA SPLIT</p>
+					<p>CHERRY PIE</p>
+					<p>CHOCO BUDDIR</p>
+					<p>COOKIE DELIGHT</p>
+					<p>APPLE PIE</p>
+					<p>FRUIT SMOOTHIE</p>
+					<p>CHOCOLATE MUFFIN</p>
+				</div>
+				<div class="price">
+					<p>8.99</p>
+					<p>1.99</p>
+					<p>8.99</p>
+					<p>8.99</p>
+					<p>5.99</p>
+					<p>1.99</p>
+					<p>1.49</p>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h3>DRINKS</h3>
+			<div  class="category">
+				<div class="dish">
+					<p>SOFT DRINKS</p>
+					<p>BOTTLED WATER</p>
+					<p>FRSH JUICE</p>
+				</div>
+				<div class="price">
+					<p>2.75</p>
+					<p>1.49</p>
+					<p>2.99</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

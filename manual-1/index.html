@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bluetooth Speaker Manual</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+<style>
+html {
+	background-color: #101010;
+	font-family: 'Roboto Mono', monospace;
+	margin: 0;
+}
+body {
+	display: flex;
+	flex-direction: row;
+}
+div {
+	flex: 1;
+}
+img {
+	width: 70px;
+}
+button {
+	background-color: #101010;
+	border: none;
+}
+.power {
+
+}
+@media (max-width: 700px) {
+	body {
+		flex-direction: column;
+	}
+}
+
+@media (hover: none) {
+	
+}
+</style>
+</head>
+<body>
+
+<div class="power"><img src="power.svg"></div>
+<div class="bluetooth"><img src="bluetooth.svg"></div>
+<div class="up"><img src="up.svg"></div>
+<div class="down"><img src="down.svg"></div>
+<div class="play"><img src="play.svg"></div>
+<div class="light"><img src="light.svg"></div>
+
+<script>
+	var after = document.getElementById("after");
+	after.style.display = "none"
+
+	var power = document.getElementById("power");
+	var bluetooth = document.getElementById("bluetooth");
+	var up = document.getElementById("up");
+	var down = document.getElementById("down");
+	var play = document.getElementById("play");
+	var light = document.getElementById("light");
+
+	power.onclick = function() {
+	  console.log("power");
+	  var powerr = document.getElementById("powerr").value;
+	  document.getElementById("power").innerHTML = powerr;
+	  power.style.display = "none";
+	  powerr.style.display = "flex"
+	}
+</script>
+</body>
+</html>
