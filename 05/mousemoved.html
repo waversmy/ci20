@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<title>mouse handler</title>
+
+<style>
+div {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+</style>
+
+<body></body>
+
+<script>
+var handler = function (event) {
+	console.log(event);
+	// information about where the mouse is 
+	var div = document.createElement("div");
+	div.style.backgroundColor = "red";
+	div.style.top = event.y + "px";
+	div.style.left = event.x + "px";
+	document.body.appendChild(div);
+};
+
+document.onmousemove = handler;
+
+</script>

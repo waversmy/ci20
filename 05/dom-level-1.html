@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<title>dom level 1</title>
+
+<style>
+/*selectors*/
+h1: nth-child(2) {}
+.headers {}
+</style>
+
+<body>
+<nav></nav>
+<h1 id="title" class="headers">The history of 80's rom coms</h1>
+</body>
+
+<script>
+
+var header = document.getElementById("title");
+console.log(header);
+header.style.color = "red";
+
+document.querySelector("title").style.color = "green";
+
+var headers = document.querySelectorAll(".headers");
+console.log(headers);
+headers[0].style.color = "purple";
+
+// part 2 creating elements
+
+// step 1 create the element
+var h1 = document.createElement("h1");
+// step 2 style it
+h1.innerHTML = "The history of 90's rom coms";
+console.log(h1);
+// step 3 append it to the page
+document.body.appendChild(h1);
+
+var text = document.createElement("p");
+text.innerHTML = "hello";
+document.querySelector("nav").appendChild(text);
+
+</script>

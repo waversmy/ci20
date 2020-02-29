@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<title>keyboard handlers</title>
+
+<body>
+<p id="text"></p>
+</body>
+
+<script>
+	
+document.onkeypress = function(event) {
+	console.log("key press", event);
+	document.querySelector("#text").innerHTML = document.querySelector("#text").innerHTML + event.key;
+	// a lot of the meta keys don't work
+};
+
+document.onkeydown = function(event) {
+	// everything keypress gets, and more
+	console.log("key down", event);
+};
+
+document.onkeyup = function(event) {
+	console.log("key up", event);
+}
+
+// keyCode is another key inside of event, where everything has a number
+
+</script>

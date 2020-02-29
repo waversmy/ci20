@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<title>arrays</title>
+<script>
+	
+// why do we need arrays
+
+var fruit1 = "apple";
+var secondfruit = "kiwi";
+var thirdfruit = "durian";
+
+// this is a container
+var fruits = ["apple", "kiwi", "durian"];
+
+console.log(fruits);
+
+// it's like a book, and page numbers.
+
+// to get a variable out of an array, we use "page numbers", or array indices (index)
+
+console.log(fruits[1]);
+
+// computers start counting from 0
+
+// how do we modify an array
+
+fruits[2] = "lemon";
+
+console.log(fruits);
+
+//add a new item to the array
+fruits[3] ="banana";
+//helpful tool for adding to an array
+fruits.push("coconut", "papaya");
+
+// helpful tool d 
+
+var array = []
+
+array.push("hello");
+array.push(53);
+console.log(array);
+
+var innerArray = ["a", "b", "c"];
+console.log(array);
+
+console.log(array[2][1]);
+
+var complex = ["one", 13, ["prince", "prints", "prence"]];
+
+console.log(complex);
+var getTheInsideArray = complex[2];
+console.log(getTheInsideArray);
+// these two lines of code do the same
+console.log(getTheInsideArray[0]);
+console.log(complex[2][0]);
+
+</script>
