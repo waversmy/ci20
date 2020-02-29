@@ -3,9 +3,11 @@ var bgcolors = ["#CC543A", "#B481BB", "#3A8FB7", "#1560BD", "#6D2E5B", "#8B81C3"
 var letter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 document.onkeydown = function (e) {
-  if (e.repeat) { return }
   console.log("key down", event);
   cursor.style.display = "none";
+  document.querySelectorAll(".colors").forEach(a => {
+    a.style.display = "none";
+  })
   document.body.style.backgroundColor = bgcolors[e.keyCode - 65];
   if (e.key == "Enter") { 
     var randomIndex = Math.floor(Math.random() * bgcolors.length);
@@ -16,14 +18,5 @@ document.onkeydown = function (e) {
   }
   else {
     document.getElementById(e.key).style.display = "block";
-  };
-};
-
-document.onkeyup = function(e) {
-  console.log("key up", event);
-  document.getElementById("cursor").style.display = "block";
-  document.body.style.backgroundColor = "#000000";
-  document.querySelectorAll(".colors").forEach(a => {
-    a.style.display = "none";
-  })
-};
+  }
+}
