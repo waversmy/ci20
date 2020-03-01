@@ -4,10 +4,13 @@ var letter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "
 
 document.onkeydown = function (e) {
   console.log("key down", event);
-  cursor.style.display = "none";
   document.querySelectorAll(".colors").forEach(a => {
     a.style.display = "none";
   })
+  document.body.style.backgroundColor = "#000000";
+  cursor.style.display = "block";
+  if (e.key == " ") { return };
+  cursor.style.display = "none";
   document.body.style.backgroundColor = bgcolors[e.keyCode - 65];
   if (e.key == "Enter") { 
     var randomIndex = Math.floor(Math.random() * bgcolors.length);
