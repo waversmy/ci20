@@ -7,10 +7,9 @@ body {
   font-size: 48px;
   color: #ffffff;
   background-color: #000000;
-  background-image: url("texture.png");
+  background-image: url(texture.png);
   background-blend-mode: overlay;
   margin: 0;
-  /*position: relative;*/
   display: flex;
   align-items: center;
   justify-content: center;
