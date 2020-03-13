@@ -4,4 +4,5 @@
 
 Parsons School of Design
 
-- [Project 1]
+- [Project 1] Mannual
+- [Project 2] Type
